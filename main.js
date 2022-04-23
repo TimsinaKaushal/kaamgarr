@@ -3,6 +3,36 @@ window.addEventListener('load', () => {
     const input = document.querySelector("#new-task-input");
     const list_el = document.querySelector("#tasks");
 
+    // const storeTasks = [];
+
+    // localStorage.setItem('Stored Task', JSON.stringify(storeTasks));
+    // storeTasks.append(input.value);
+    // localStorage.getItem('Stored Task');
+
+    // console.log(storeTasks);
+
+    //  localStorage.setItem('tasks', "list_el");
+    //  localStorage.getItem('list_el');
+    // console.log(list_el);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 

@@ -1,48 +1,34 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'garamond';
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: rgb(25, 25, 54);
+    background: rgb(36, 33, 33);
     color: white;
 }
 
 header {
+    text-align: center;
     padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: gray;
-    margin-bottom: 1rem
-}
-
 #new-task-form {
     display: flex;
-}
-
-input,
-button {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
 }
 
 #new-task-input {
     flex: 1 1 0%;
     background-color: black;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: none;
     margin-right: 1rem;
     color: lightblue;
     font-size: 1.25rem;
@@ -53,17 +39,21 @@ button {
 }
 
 #new-task-submit {
-    color: rgb(117, 14, 91);
-    font-size: 1.25rem;
-    font-weight: 700;
+    
     cursor: pointer;
-    transition: 0.4s;
+    font-weight: 600;
+    background-color: transparent;
+    border: solid transparent;
+    font-size: 1.5rem;
+    border-radius: .15rem;
+    color: #0d6efd;
+    border-color: transparent;
 }
 main {
     flex: 1 1 0%;
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 .task-list {
@@ -71,6 +61,7 @@ main {
 }
 
 .task-list h2 {
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 300;
     color: gray;
@@ -80,10 +71,10 @@ main {
 #tasks .task {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: transparent;
     padding: 1rem;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 #tasks .task .content {
@@ -91,7 +82,7 @@ main {
 }
 
 .task .content .text {
-    color: whitesmoke;
+    color: darkslategray;
     font-size: 1.125rem;
     width: 100%;
     display: block;
@@ -99,7 +90,7 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-    color: rgb(49, 22, 26);
+    color:darkorchid;
 }
 
 #tasks .task .actions {
@@ -112,7 +103,6 @@ main {
     margin: 0 0.5rem;
     font-size: 1.125rem;
     font-weight: 700;
-    text-transform: uppercase;
     transition: 0.4s;
 }
 
